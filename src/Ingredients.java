@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Ingredients {
     public int eggsEach;
@@ -7,11 +7,11 @@ public class Ingredients {
     public int sticksOfButter;
     public int cupsOfMilk;
     public int tspBakingSoda;
-    public ArrayList<?> flavorings;
+    public String flavorings;
 
     public Ingredients(int eggsEach, int cupsOfFlour, int dropsOfVanilla,
                        int sticksOfButter, int cupsOfMilk, int tspBakingSoda,
-                       ArrayList<?> flavorings) {
+                       String flavorings) {
         this.eggsEach = eggsEach;
         this.cupsOfFlour = cupsOfFlour;
         this.dropsOfVanilla = dropsOfVanilla;
@@ -19,6 +19,10 @@ public class Ingredients {
         this.cupsOfMilk = cupsOfMilk;
         this.tspBakingSoda = tspBakingSoda;
         this.flavorings = flavorings;
+    }
+
+    public Ingredients() {
+
     }
 
     public int getEggsEach() {
@@ -69,11 +73,11 @@ public class Ingredients {
         this.tspBakingSoda = tspBakingSoda;
     }
 
-    public ArrayList<?> getFlavorings() {
+    public String getFlavorings() {
         return flavorings;
     }
 
-    public void setFlavorings(ArrayList<?> flavorings) {
+    public void setFlavorings(String flavorings) {
         this.flavorings = flavorings;
     }
 }
